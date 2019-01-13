@@ -1,0 +1,17 @@
+Esempio: 
+python unzipFile.py --path=./Pcaps/ --password=pwd1,pwd2
+python unzipFile.py --path=./Zip/ --folder=Unzipped
+
+Path: Il percorso della cartella nel quale i file zip sono contenuti
+
+Password: La lista delle password per estrarre i .zip . ATT.NE: Non lasciare spazio 
+tra una password e l'altra e usare la virgola come separatore
+
+folder: Il nome della cartella nella quale si vogliono i file decompressi
+
+
+LIMITAZIONI:
+
+-Non possono esserci file non protetti e protetti in uno stesso .zip .
+-Lo script controlla i nomi dei file nella cartella dove vengono estratti e se all'interno di uno 
+zip è presente un file con il medesimo nome di uno presente tra quelli scaricati, lo zip non verrà estratto.

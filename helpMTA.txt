@@ -1,0 +1,29 @@
+Esempio:
+python MTADownloader.py
+python MTADownloader.py --randomly=1 --pcap_number=4
+python MTADownloader.py --randomly=0 --pcap_number=7 --save_link=helloWorld
+
+Randomly: 
+    1 : Scarica pcap scegliendo in maniera randomica tra quelli disponibili
+    0 : Scarica rispettando l'ordine del sito malware traffic analisys. Dal 2013 al 2019
+
+    Di Default è 1
+
+Pcap_number:
+    0 : Scarica tutti i .pcap disponibili. Potrebbe richiedere molto tempo.
+    x : (x > 0) Scarica il numero di pacchetti specificato. Se x supera i .pcap disponibili, saranno scaricati tutti.
+
+    Di Default è 4
+
+Save_link:
+    "": Non salva i link dei .pcap .
+    <nome_file>: Salva i link dei .pcap in un file di testo.
+
+NB: 
+
+Se dovessere esserci problemi di scrittura dei pcap.zip fornire i permessi necessari:
+
+    sudo chmod 777 MTADownloader.py
+
+In alternativa eseguire con i privilegi:
+    sudo MTADownloader.py
