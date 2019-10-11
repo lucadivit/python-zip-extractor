@@ -10,6 +10,7 @@ cd python-zip-extractor
 ```
 
 ## Usage
+This script can be used only with python2
 
 Example of usage:
 
