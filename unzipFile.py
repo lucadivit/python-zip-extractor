@@ -160,7 +160,7 @@ def main(argv):
     if(len(argv) == 1 and argv[0] == "--help"):
         helpFile = open("helpUF.txt")
         for line in helpFile:
-            print line
+            print (line)
         sys.exit(2)
     try:
         opts, argv = getopt.getopt(argv, "", ("path=", "password=", "folder="))
